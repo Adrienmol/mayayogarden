@@ -20,40 +20,70 @@
     <nav class="navegation-menu">
 
         <div class="navegation-menu-left">
-            <img src="img/logo_mayayo.png" alt="Logo"><p class="company-label">Mayayo Garden</p>
+            <img src="img/logo_mayayo.png" alt="Logo">
+            <p class="company-label">Mayayo Garden</p>
         </div>
-        
+
         <div class="navegation-menu-right">
             <div class="navegation-menu-links">
                 <a href="">Inicio</a>
-                <a href="">Servicios</a>
+                <a href="#idServices">Servicios</a>
                 <a href="">Galería</a>
                 <a href="">Contacto</a>
             </div>
-            <img src="img/spain_flag.png" alt="" class="language-flag">
-            <label class="language-switch">
-                <input type="checkbox">
-                <span class="slider"></span>
-            </label>
-            <img src="img/uk_flag.png" alt="" class="language-flag">
+            <div id="languageSwitch" class="switch">
+                <div class="slider"></div>
+            </div>
         </div>
-        
+
     </nav>
 
     <div class="hero-image-container">
         <div class="overlay"></div> <!-- Capa oscura -->
         <div class="hero-image-content">
             <p>Bienvenido a Mayayo Garden</p>
-            <a href="">Explora nuestros servicios</a>
+            <a href="#idServices">Explora nuestros servicios</a>
+            <a href="">Contáctanos</a>
         </div>
     </div>
 
-    <div class="skeleton">
-        <div class="about-us-section">
+    <section class="about-us">
+        <div class="about-text">
+            <h2>Sobre Nosotros</h2>
+            <p>Somos es una empresa de jardinería familiar fundada hace más de 20 años por dos hermanos apasionados por el diseño y el cuidado de espacios verdes. Con un firme compromiso con la calidad y la satisfacción de nuestros clientes, hemos tenido el privilegio de colaborar con cientos de personas y llevar a cabo miles de proyectos, desde jardines residenciales hasta amplios espacios comerciales.</p>
 
+            <p>A lo largo de nuestra trayectoria, hemos construido una reputación basada en la profesionalidad, dedicación y respeto por el medio ambiente. Nos enorgullecemos de nuestro equipo de expertos, quienes trabajan con esmero para transformar cada rincón en un lugar verde, fresco y lleno de vida. Cada uno de nuestros servicios <span class="about-text-quotation">— desde el diseño y construcción de jardines hasta el mantenimiento de piscinas y la venta de una amplia variedad de plantas —</span> está pensado para satisfacer las necesidades de nuestros clientes, garantizando soluciones adaptadas y duraderas.</p>
+
+            <p>Creemos que un espacio verde bien cuidado no solo embellece su entorno, sino que también aporta paz y bienestar. En Mayayo Garden, cada proyecto es una oportunidad para crear belleza y dejar una huella positiva en la naturaleza.</p>
         </div>
-    </div>
+        <div class="about-image">
+            <img src="img/mayayo_maps.png" alt="">
+        </div>
+    </section>
 
+    <section class="services" id="idServices">
+        <h1>Nuestros Servicios</h1>
+        <div class="service-container">
+            <div class="service">
+                <h3>Jardines</h3>
+                <p>Jardines</p>
+                <img src="img/garden.png" alt="">
+            </div>
+            <div class="service">
+                <h3>Piscinas</h3>
+                <p>Piscinas</p>
+                <img src="img/pool.png" alt="">
+            </div>
+            <div class="service">
+                <h3>Plantas</h3>
+                <p>Plantas</p>
+                <img src="img/plant.png" alt="">
+            </div>
+        </div>
+    </section>
+
+   
+    
 
     <script src="scripts/translations.js"></script>
 </body>

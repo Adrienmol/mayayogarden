@@ -12,3 +12,13 @@ const translations = {
 
 console.log(translations["en"]["title"]);
 
+
+// Código para el slider de idioma
+const languageSwitch = document.getElementById('languageSwitch');
+let isEnglish = false;
+
+languageSwitch.addEventListener('click', function() {
+    isEnglish = !isEnglish;
+    this.classList.toggle('active');
+});
+
