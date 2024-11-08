@@ -1,0 +1,199 @@
+:root {
+    font-family: "Poppins", sans-serif;
+
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.navegation-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    min-height: 5vh;
+}
+
+.navegation-menu-left {
+    display: flex;
+    align-items: center;
+}
+
+.company-label {
+    font-weight: bold;
+    margin-left: 2rem;
+    font-size: 2rem;
+}
+
+.navegation-menu-right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.language-flag {
+    height: 2rem;
+    width: auto;
+}
+
+.navegation-menu-links>* {
+    margin-right: 1rem;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.hero-image-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    /* Ajusta el tamaño según tus necesidades */
+    display: flex;
+    justify-content: center;
+    /* Centrado horizontal */
+    align-items: center;
+    /* Centrado vertical */
+    overflow: hidden;
+    /* Asegura que no se desborde la imagen */
+}
+
+.hero-image-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("img/exterior_image.png");
+    background-size: cover;
+    background-position: center;
+    filter: brightness(30%);
+    /* Oscurece solo la imagen */
+    z-index: 1;
+}
+
+.hero-image-container .hero-image-content {
+    position: relative;
+    z-index: 2;
+    /* Asegura que el contenido esté por encima del overlay */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-image-container .hero-image-content a {
+    color: white;
+    text-decoration: none;
+    background-color: rgba(76, 175, 80, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.hero-image-content p {
+    font-size: 2rem;
+}
+
+.skeleton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10vw;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 80vw;
+    
+}
+
+.about-us-section {
+    border: 10px solid red;
+    width: 100%;
+    min-height: 600px;
+}
+
+
+
+
+/*Código para el SLIDER:*/
+
+/* From Uiverse.io by gharsh11032000 */
+/* The language-switch - the box around the slider */
+.language-switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+    border: 2px solid rgb(163, 162, 162);
+    border-radius: 100px;
+}
+
+/* Hide default HTML checkbox */
+.language-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    inset: 0;
+    background: white;
+    border-radius: 50px;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    right: 0.3em;
+    bottom: 0.3em;
+    transform: translateX(150%);
+    background-color: #59d102;
+    border-radius: inherit;
+    transition: all 0.4s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.slider:after {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    left: 0.3em;
+    bottom: 0.3em;
+    background-color: #cccccc;
+    border-radius: inherit;
+    transition: all 0.4s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.language-switch input:focus+.slider {
+    box-shadow: 0 0 1px #59d102;
+}
+
+.language-switch input:checked+.slider:before {
+    transform: translateY(0);
+}
+
+.language-switch input:checked+.slider::after {
+    transform: translateX(-150%);
+}
+
+
+/*Media query para versiones móviles y tablet:*/
+
+/* Ajuste para dispositivos móviles o tabletas 
+@media (max-width: 768px) {
+    .hero-image-container {
+        height: 300px;  /* Ajusta la altura para dispositivos móviles 
+    }
+}
+*/
