@@ -20,7 +20,10 @@ body {
     align-items: center;
     padding: 1.5rem;
     height: 3vh;
-
+    position: sticky; /* Hace que el nav se quede pegado al hacer scroll */
+    top: 0; /* Fija la posición en la parte superior de la ventana */
+    background-color: #fff; /* Añade color de fondo para que se vea sobre el contenido */
+    z-index: 10; /* Asegura que esté encima de otros elementos */
 }
 
 .navegation-menu-left {
@@ -241,15 +244,45 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 10px 10px 20px 10px;
 }
 
 .find-us-map {
     width: 60%;
 }
 
+.find-us-social {
+    margin-top: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+}
+
+.find-us-social-item {
+    background-color: white;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 50px;
+    width: 30%;
+}
+
+.find-us-social-item p {
+    font-size: 1rem;
+}
+
+.find-us-social-item img {
+    width: 4vw;
+}
 
 
-@media (max-width: 768px) {
+
+
+
+@media (max-width: 900px) {
     .about-us {
         flex-direction: column;
         padding: 0 5vw;
@@ -269,6 +302,26 @@ body {
         width: 100%;
         height: auto;
     }
+
+    .find-us-social {
+        gap: 3px;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .find-us-social-item {
+        justify-content: start;
+        width: 90%;
+    }
+
+    .find-us-social-item p {
+        font-size: 1.2rem;
+    }
+
+    .find-us-social-item img {
+        width: 10vw;
+    }
+
 }
 
 
