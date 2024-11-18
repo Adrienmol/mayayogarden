@@ -299,7 +299,8 @@ body {
         margin-right: 40px;
     }
 
-    .navegation-menu-links {
+    .navegation-menu-links,
+    .navegation-menu-links > * {
         display: none;
     }
 
@@ -363,18 +364,6 @@ body {
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
