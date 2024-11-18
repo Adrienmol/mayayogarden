@@ -301,7 +301,7 @@ body {
 
     .navegation-menu-links,
     .navegation-menu-links > * {
-        display: none;
+        display: none !important; 
     }
 
     .hero-image-content {
