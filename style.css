@@ -119,6 +119,7 @@ body {
 .about-us {
     display: flex;
     align-items: stretch; /* Asegura que tanto el texto como la imagen tengan la misma altura */
+    flex-direction: column;
     gap: 20px;
     padding: 0 15vw;
     min-height: 400px;
@@ -154,7 +155,7 @@ body {
 }
 
 .about-image img {
-    width: 100%;
+    width: 50%;
     height: auto;
     object-fit: cover;
     max-height: 100%; /* Asegura que la imagen no se desborde */
@@ -249,7 +250,10 @@ body {
 
 .find-us-map {
     width: 60%;
+    height: 40%;
 }
+
+
 
 .find-us-social {
     margin-top: 3vh;
@@ -280,9 +284,38 @@ body {
 
 
 
-
-
 @media (max-width: 900px) {
+
+    .navegation-menu {
+        position: fixed;
+        width: 100%;
+    }
+
+    .company-label {
+        font-size: 1.2rem;
+    }
+
+    #languageSwitch {
+        margin-right: 40px;
+    }
+
+    .navegation-menu-links {
+        display: none;
+    }
+
+    .hero-image-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        text-wrap: balance;
+    }
+
+    .hero-image-content a {
+        font-size: 0.9rem;
+        width: 40%;
+    }
+
     .about-us {
         flex-direction: column;
         padding: 0 5vw;
@@ -304,22 +337,29 @@ body {
     }
 
     .find-us-social {
-        gap: 3px;
         flex-direction: column;
         align-items: start;
     }
 
     .find-us-social-item {
         justify-content: start;
-        width: 90%;
+        width: 100%;
+    }
+
+    .find-us-map-label {
+        font-size: 0.6rem;
+    }
+
+    .find-us-social-item a {
+        font-size: 0.8rem;
     }
 
     .find-us-social-item p {
-        font-size: 1.2rem;
+        font-size: 0.8rem;
     }
 
     .find-us-social-item img {
-        width: 10vw;
+        min-width: 4vh;
     }
 
 }
@@ -377,14 +417,3 @@ body {
     transform: translateX(40px);
     background-image: url('https://flagcdn.com/w80/gb.png');
 }
-
-
-/*Media query para versiones móviles y tablet:*/
-
-/* Ajuste para dispositivos móviles o tabletas 
-@media (max-width: 768px) {
-    .hero-image-container {
-        height: 300px;  /* Ajusta la altura para dispositivos móviles 
-    }
-}
-*/
