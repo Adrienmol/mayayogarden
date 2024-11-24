@@ -240,6 +240,12 @@ body {
     background-position: 100% 60%; /* Ajusta el porcentaje para el posicionamiento */
 }
 
+.service-article .overlay {
+    background-image: url("img/articulos.jpg");
+    background-size: cover;
+    background-position: 100% 60%;
+}
+
 .find-us {
     display: flex;
     justify-content: center;
