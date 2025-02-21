@@ -15,12 +15,13 @@ body {
 }
 
 .navegation-menu {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem;
     height: 3vh;
-    position: sticky; /* Hace que el nav se quede pegado al hacer scroll */
+    position: fixed; /* Hace que el nav se quede pegado al hacer scroll */
     top: 0; /* Fija la posición en la parte superior de la ventana */
     background-color: #fff; /* Añade color de fondo para que se vea sobre el contenido */
     z-index: 10; /* Asegura que esté encima de otros elementos */
@@ -44,6 +45,7 @@ body {
 
 .navegation-menu-right {
     margin-left: auto;
+    margin-right: 2rem;
     display: flex;
     align-items: center;
     gap: 10px;
